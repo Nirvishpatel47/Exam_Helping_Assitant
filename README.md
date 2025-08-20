@@ -33,3 +33,42 @@ Python: The primary programming language.
 dotenv: For managing API keys and environment variables securely.
 
 Logging: Implements a rotating file handler for logging user questions and AI responses for monitoring and security.
+
+# Steps to run this on your system
+## Step 1: Install Python and Git
+If you don't already have them, you need to install Python and Git on your computer.
+
+Install Python: Download and install Python from the official website. Be sure to check the box that says "Add Python to PATH" during installation.
+
+Install Git: Download and install Git from the official website.
+
+## Step 2: Get the Code and Install Libraries
+Clone the Repository: Open your terminal or command prompt and run the following commands to download the project code.
+
+Bash
+`git clone https://github.com/Nirvishpatel47/Exam_Helping_Assistant.git`
+Install all libraries at once: Run the following command. This will install all required packages globally on your system.
+
+`pip install pandas python-dotenv langchain-community langchain-core langchain-google-genai streamlit langchain-community faiss-cpu``
+## Step 3: Configure Your API Key
+Your code needs a secret key to work.
+Get your Google Gemini API Key from Google AI Studio.
+Create a file named .env in the project's main folder.
+Open the .env file and add this line, replacing the text in quotes with your actual key:
+
+Code snippet:
+
+`GEMINI_API_KEY="YOUR_API_KEY_HERE"`
+
+## Step 4: Run the Application
+Now you can run the program directly.
+Put your document (e.g., abc.pdf) in the same folder as your Python script.
+
+Open your terminal in that folder.
+
+Run the script using the python command:
+
+Bash
+
+python main.py
+The program will then prompt you to enter the document path and your questions.
