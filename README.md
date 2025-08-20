@@ -68,7 +68,6 @@ Open your terminal in that folder.
 
 Run the script using the python command:
 
-Bash
-
-python main.py
+Bash:
+`python your_filename.py`
 The program will then prompt you to enter the document path and your questions.
